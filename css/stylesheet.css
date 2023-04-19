@@ -1,0 +1,112 @@
+/* 
+Made by: Jose Meza
+Date: 4/5/2023
+file name: Senior Project
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, section, article, aside {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* style rule for body */
+body {
+	background-color: #c8dbE3;
+}
+
+/* style rules for mobile viewport */
+
+/* style rules for header */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 0.02em;
+	background-color: #183440;
+	color: #fff;
+	padding: 7%;
+	text-align: center;
+}
+
+/* style rules for nav area */
+nav {
+	background-color: #183440;
+	padding: 0.5%;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	color: #fff;
+	padding: 1% 3%;
+	text-decoration: none;
+	
+}
+nav li a:hover {
+	background-color:#0F3EBF;
+		
+}
+
+
+/* style rules for main content */
+main {
+	padding: 1em;
+	background-color: #fff;
+}
+
+section {
+	background-color: #183440;
+	color: #fff;
+	margin-top: 4%;
+	padding: 3%;
+	font-size: 110%;
+}
+
+article {
+	margin-top: 1%;
+	padding: 2%;
+}
+
+aside {
+	background-color:rgba(24,52,64,0.3);
+	padding: 2%;
+	margin-top: 1%;
+	color: #183440;
+	box-shadow: 4px 4px 10px #183440;
+}
+
+footer {
+	font-size: .70;
+	text-align: center;
+}
+
+/*  Media Query for tablet Viewport */
+@media screen and (min-width: 650px), print {
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+	}
+	
+	aside {
+		grid-column: 1 / span 2;
+	}
+	
+}
+
+
+/* media Quesry for desktop Viewport */
+@media screen and (min-width: 1024px), print {
+
+	.grid {
+		grid-template-columns: auto auto auto auto;
+	}
+	
+	aside {
+		grid-column: 1 / span 4;
+	}
+	
+}
